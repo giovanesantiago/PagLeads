@@ -37,6 +37,7 @@ footer{
     text-align: center;
     font-style: normal;
     position:absolute;
+    margin-bottom: 20px;
     bottom:0;
     width:100%;
 }
