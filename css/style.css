@@ -11,7 +11,7 @@ main{
     margin: 20px;
 }
 .fundo{
-    background-image: url("/PagLeads/imagens/fundo.jpg");
+    background-image: url("../imagens/fundo.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
