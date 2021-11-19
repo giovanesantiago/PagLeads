@@ -20,6 +20,7 @@ function VerificaNome(conteudo) {
 
 function VerificarTel(conteudo) {
     const telefone = conteudo
+    var telHtml = document.getElementById('telefone')
     
     function validPhone (phone) {
         var regex = new RegExp('^\[0-9]{2}\((3[0-9]{7})|(9[0-9]{8}))$');
@@ -28,5 +29,6 @@ function VerificarTel(conteudo) {
     
     if (validPhone(telefone) == false){
         alert('[error] Confira se o numero foi digitado corretamente : \n  - inclua o DDD com 2 digitos \n - confira se nao faltou nenhum numero')
+        telHtml.value = ''
     }
 }
