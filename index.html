@@ -11,6 +11,8 @@
 
     <!--Verificando dados-->
     <script src="js/verificar.js"></script>
+    <!--Envio de dados-->
+    <script src="js/dados.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
     <title>Royal Enfield</title>
@@ -32,25 +34,25 @@
                       </div>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       <div id="emailHelp" class="form-text">Email opicional</div>
                     </div>
-                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" >
-                        <option selected>Motocicleta</option>
+                    <select id="moto" class="form-select form-select-sm" aria-label=".form-select-sm example" >
+                        <option  selected>Motocicleta</option>
                         <option value="1">Meteor 350</option>
                         <option value="2">Himalayan 411</option>
                         <option value="3">Interceptor 650 twin</option>
                         <option value="4">Continetal 650 twin</option>
                       </select>
                       <br>
-                      <select class="form-select form-select-sm" aria-label=".form-select-sm example" >
+                      <select id="pag" class="form-select form-select-sm" aria-label=".form-select-sm example" >
                         <option selected>Forma de pagamento</option>
                         <option value="1">A vista</option>
                         <option value="2">Cartão</option>
                         <option value="3">Financiamento</option>
                       </select>
                     <br>
-                    <button type="submit" class="btn btn-primary">Enviar</button> 
+                    <button onclick="enviar()" type="submit" class="btn btn-primary">Enviar</button> 
             </form>
         </main>
         <footer>Desenvolvido por <a href="https://giovanesantiago.netlify.app/" target="_blank">Giovane Santiago</a> </footer>
